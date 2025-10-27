@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dseg/css/dseg.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400..900&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="team-scores">
+                <h3 class="team-name">HOME</h3>
+                <p class="individual-score" id="home-score">12</p>
+                <div class="score-btn">
+                    <button class="score-btn-1" onclick="updateScoreHome(1)">+ 1</button>
+                    <button class="score-btn-2" onclick="updateScoreHome(2)">+ 2</button>
+                    <button class="score-btn-3" onclick="updateScoreHome(3)">+ 3</button>
+                    <button class="score-btn-6" onclick="updateScoreHome(6)">+ 6</button>
+                    <div id="start-over">
+                        <button id="new-game" onclick="newGame()">NEW GAME</button>
+                     </div>
+                </div>
+            </div>
+            <div class="team-scores">
+                <h3 class="team-name">GUEST</h3>
+                <p class="individual-score" id="guest-score">5</p>
+                <div class="score-btn">
+                    <button class="score-btn-1" onclick="updateScoreGuest(1)">+ 1</button>
+                    <button class="score-btn-2" onclick="updateScoreGuest(2)">+ 2</button>
+                    <button class="score-btn-3" onclick="updateScoreGuest(3)">+ 3</button>
+                    <button class="score-btn-6" onclick="updateScoreGuest(6)">+ 6</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
